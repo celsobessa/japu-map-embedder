@@ -6,7 +6,7 @@
  * This file is used to markup the admin-facing aspects of the plugin.
  *
  * @link       https://www.japuapp.com.br/
- * @since      1.0.0
+ * @since      0.1.0
  *
  * @package    Japu_Map_Embedder
  * @subpackage Japu_Map_Embedder/admin/partials

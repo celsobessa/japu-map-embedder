@@ -9,14 +9,14 @@
  * that starts the plugin.
  *
  * @link              https://www.japuapp.com.br/
- * @since             1.0.0
+ * @since             0.1.0
  * @package           Japu_Map_Embedder
  *
  * @wordpress-plugin
  * Plugin Name:       Japu Map Embedder
  * Plugin URI:        https://www.japuapp.com.br/plugins/japu-map-embedder/
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
- * Version:           1.0.0
+ * Description:       This plugin allows the embedding <a href="https://www.japuapp.com.br">Japu App maps</a> on a WordPress website.
+ * Version:           0.1.0
  * Author:            Celso Bessa
  * Author URI:        https://www.japuapp.com.br/
  * License:           GPL-2.0+
@@ -30,7 +30,7 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-define( 'PLUGIN_NAME_VERSION', '1.0.0' );
+define( 'PLUGIN_NAME_VERSION', '0.1.0' );
 
 /**
  * The code that runs during plugin activation.
@@ -66,7 +66,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-japu-map-embedder.php';
  * then kicking off the plugin from this point in the file does
  * not affect the page life cycle.
  *
- * @since    1.0.0
+ * @since    0.1.0
  */
 function run_japu_map_embedder() {
 
