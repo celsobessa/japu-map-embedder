@@ -13,10 +13,12 @@ PHP > 7.0
 
 ### Installing
 
-1. Download the master branch from the official Github repository
-2. Upload `japu-map-embedder` folder to the `/wp-content/plugins/` directory
-3. Activate the plugin through the 'Plugins' menu in WordPress
-4. If you are a registered Japu - Rotas das Vertentes partner, go to Customizer -> Japu App Integration and set you Partner ID
+1. Download the japu-map-embedder from master branch in the [official Github repository](https://github.com/2aces/japu-map-embedder/)
+2. In the WordPress admin, got to Plugins -> Add New Plugin
+3. Click on Click on Upload Plugin, choose the zip file and click on install
+⋅⋅1. Also, you can upload `japu-map-embedder` folder to the `/wp-content/plugins/` directory instead of steps 2 and 3
+4. Activate the plugin through the 'Plugins' menu in WordPress
+5. If you are a registered Japu - Rotas das Vertentes partner, go to Customizer -> Japu App Integration and set you Partner ID
 
 ### Use
 
@@ -39,26 +41,53 @@ Use the `[japumap]` shortcode anywhere in the main content of a post or page. It
 Click on Add New Plugin
 ![Click on Add New Plugin][Click on Add New Plugin]
 
-#### Click on Upload Plugin
+Click on Upload Plugin
 ![Click on Upload Plugin][Click on Upload Plugin]
+
+Choose file and click on install
+![Choose file and click on install][Choose file and click on install]
 
 [Click on Add New Plugin]: ./screenshot-4.jpg
 [Click on Upload Plugin]: ./screenshot-5.jpg
-
------
-[Choose file and click on install](./screenshot-6.jpg)
+[Choose file and click on install]: ./screenshot-6.jpg
 
 ### Setup Screenshots
-[Click on Customizer](./screenshot-7.jpg)
-[Click on Japu App Integration](./screenshot-8.jpg)
-[Add your Partner ID](./screenshot-9.jpg)
+Click on Customizer
+![Click on Customizer][Click on Customizer]
+
+Click on Japu App Integration
+![Click on Japu App Integration][Click on Japu App Integration]
+
+Add your Partner ID
+![Add your Partner ID][Add your Partner ID]
+
+[Click on Customizer]: ./screenshot-7.jpg
+[Click on Japu App Integration]: ./screenshot-8.jpg
+[Add your Partner ID]: ./screenshot-9.jpg
 
 ### Setup Screenshots
-[Click on Add a Japu Map in a page or post...](./screenshot-10.jpg)
-[... and will be automatically appended to the main content area](./screenshot-11.jpg)
-[You can add a shortcode to any post type content to embed a Japu map](./screenshot-12.jpg)
-[If you are registered partner, you can use your partnerid in the shortcode](./screenshot-13.jpg)
-[The shortcode will be transformed in a map in the frontend](./screenshot-14.jpg)
+
+Click on Add a Japu Map in a page or post...
+![Click on Add a Japu Map in a page or post...][Click on Add a Japu Map in a page or post...]
+
+... and will be automatically appended to the main content area
+![... and will be automatically appended to the main content area][... and will be automatically appended to the main content area]
+
+You can add a shortcode to any post type content to embed a Japu map
+![You can add a shortcode to any post type content to embed a Japu map][You can add a shortcode to any post type content to embed a Japu map]
+
+If you are registered partner, you can use your partnerid in the shortcode
+![If you are registered partner, you can use your partnerid in the shortcode][If you are registered partner, you can use your partnerid in the shortcode]
+
+The shortcode will be transformed in a map in the frontend
+![The shortcode will be transformed in a map in the frontend][The shortcode will be transformed in a map in the frontend]
+
+
+[Click on Add a Japu Map in a page or post...]: ./screenshot-10.jpg
+[... and will be automatically appended to the main content area]: ./screenshot-11.jpg
+[You can add a shortcode to any post type content to embed a Japu map]: ./screenshot-12.jpg
+[If you are registered partner, you can use your partnerid in the shortcode]: ./screenshot-13.jpg
+[The shortcode will be transformed in a map in the frontend]: ./screenshot-14.jpg
 
 ## Built With
 
