@@ -21,6 +21,18 @@ This project adheres to [Semantic Versioning](http://semver.org/)
 - check if is possible to license the non-GNU/WordPress parts as MIT or other license
 - better github README.md and other info (contributing, license, contributors, acknowledgements, etc)
 
+## 0.2.0
+
+### Added
+- screenshots for installing, setup, using and live usage
+- plugin banners (for future use on WordPress plugins repository)
+
+### Changed
+- Improved README files
+
+### Fixed
+- Improved styles
+
 ## 0.1.0
 
 ### Added
