@@ -13,10 +13,14 @@ PHP > 7.0
 
 ### Installing
 
-1. Download the master branch from the official Github repository
-2. Upload `japu-map-embedder` folder to the `/wp-content/plugins/` directory
-3. Activate the plugin through the 'Plugins' menu in WordPress
-4. If you are a registered Japu - Rotas das Vertentes partner, go to Customizer -> Japu App Integration and set you Partner ID
+1. Download the japu-map-embedder from master branch in the [official Github repository](https://github.com/2aces/japu-map-embedder/)
+2. In the WordPress admin, got to Plugins -> Add New Plugin
+3. Click on Upload Plugin, choose the zip file and click on install
+  1. Also, you can upload `japu-map-embedder` folder to the `/wp-content/plugins/` directory instead of steps 2 and 3
+4. Activate the plugin through the 'Plugins' menu in WordPress
+5. If you are a registered Japu - Rotas das Vertentes partner, go to Customizer -> Japu App Integration and set you Partner ID
+
+Check the Screenshots session below for a visual step-by-step guide to install the plugin
 
 ### Use
 
@@ -28,9 +32,77 @@ Tick the Add Japu Map checkbox in the side area of post and page editors (below 
 
 If you are a registered Japu - Rotas das Vertentes partner, set your Partner ID on Customizer -> Japu App Integration and it will be automaticall used with your appended maps for customizing some map styles and content.
 
+
 #### alternative 2: japumap shortcode
 
 Use the `[japumap]` shortcode anywhere in the main content of a post or page. It will be transformed into a map in the front end inside the content area. If you are a  Japu - Rotas ds Vertentes partner, you can pass a `partnerid` parameter and some map styles and content will be customized.
+
+Check the Screenshots session below for a visual step-by-step guide for using the plugin
+
+## Screenshots
+
+### Installation Screenshots
+
+Click on Add New Plugin
+![Click on Add New Plugin][Click on Add New Plugin]
+
+Click on Upload Plugin
+![Click on Upload Plugin][Click on Upload Plugin]
+
+Choose file and click on install
+![Choose file and click on install][Choose file and click on install]
+
+[Click on Add New Plugin]: ./assets/screenshot-4.jpg
+[Click on Upload Plugin]: ./assets/screenshot-5.jpg
+[Choose file and click on install]: ./assets/screenshot-6.jpg
+
+### Setup Screenshots
+Click on Customizer
+![Click on Customizer][Click on Customizer]
+
+Click on Japu App Integration
+![Click on Japu App Integration][Click on Japu App Integration]
+
+Add your Partner ID
+![Add your Partner ID][Add your Partner ID]
+
+[Click on Customizer]: ./assets/screenshot-7.jpg
+[Click on Japu App Integration]: ./assets/screenshot-8.jpg
+[Add your Partner ID]: ./assets/screenshot-9.jpg
+
+### Using Screenshots
+
+Click on Add a Japu Map in a page or post...
+![Click on Add a Japu Map in a page or post...][Click on Add a Japu Map in a page or post...]
+
+... and will be automatically appended to the main content area
+![... and will be automatically appended to the main content area][... and will be automatically appended to the main content area]
+
+You can add a shortcode to any post type content to embed a Japu map
+![You can add a shortcode to any post type content to embed a Japu map][You can add a shortcode to any post type content to embed a Japu map]
+
+If you are registered partner, you can use your partnerid in the shortcode
+![If you are registered partner, you can use your partnerid in the shortcode][If you are registered partner, you can use your partnerid in the shortcode]
+
+The shortcode will be transformed in a map in the frontend
+![The shortcode will be transformed in a map in the frontend][The shortcode will be transformed in a map in the frontend]
+
+
+[Click on Add a Japu Map in a page or post...]: ./assets/screenshot-10.jpg
+[... and will be automatically appended to the main content area]: ./assets/screenshot-11.jpg
+[You can add a shortcode to any post type content to embed a Japu map]: ./assets/screenshot-12.jpg
+[If you are registered partner, you can use your partnerid in the shortcode]: ./assets/screenshot-13.jpg
+[The shortcode will be transformed in a map in the frontend]: ./assets/screenshot-14.jpg
+
+## Upcoming
+
+- Custom bottom bar color and partner logo
+- partner menu in the fullscreen map
+- optimized and faster loader for the automatic map
+- map widgets
+- gutenberg editor support
+
+You can suggest improvements and new features on Github
 
 ## Built With
 

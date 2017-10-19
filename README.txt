@@ -19,10 +19,30 @@ ATTENTION: this plugin is in it's initial development. There may be some bugs an
 
 == Installation ==
 
-1. Download the master branch from the official Github repository
-2. Upload `japu-map-embedder` folder to the `/wp-content/plugins/` directory
-3. Activate the plugin through the 'Plugins' menu in WordPress
-4. If you are a registered Japu - Rotas das Vertentes partner, add you partner id on Customizer -> Japu App Integration
+1. Download the master branch from the <a href="https://github.com/2aces/japu-map-embedder/">official Github repository</a>
+2. In the WordPress admin, got to Plugins -> Add New Plugin
+3. Click on Upload Plugin, choose the zip file and click on install
+4. Also, you can upload `japu-map-embedder` folder to the `/wp-content/plugins/` directory instead of steps 2 and 3
+5. Upload `japu-map-embedder` folder to the `/wp-content/plugins/` directory
+6. Activate the plugin through the 'Plugins' menu in WordPress
+7. If you are a registered Japu - Rotas das Vertentes partner, add you partner id on Customizer -> Japu App Integration
+
+Check the Screenshots session below for a visual step-by-step guide to install the plugin
+
+== Screenshots ==
+
+4. Click on Add New Plugin
+5. Click on Upload Plugin
+6. Choose file and click on install
+7. Click on Customizer
+8. Click on Japu App Integration
+9. Add your Partner ID
+10. Click on Add a Japu Map in a page or post...
+11. ... and will be automatically appended to the main content area
+12. You can add a shortcode to any post type content to embed a Japu map
+13. If you are registered partner, you can use your partnerid in the shortcode
+14. The shortcode will be transformed in a map in the frontend
+
 
 == Frequently Asked Questions ==
 
