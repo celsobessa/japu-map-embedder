@@ -32,6 +32,25 @@ If you are a registered Japu - Rotas das Vertentes partner, set your Partner ID 
 
 Use the `[japumap]` shortcode anywhere in the main content of a post or page. It will be transformed into a map in the front end inside the content area. If you are a  Japu - Rotas ds Vertentes partner, you can pass a `partnerid` parameter and some map styles and content will be customized.
 
+## Screenshots
+
+### Installation Screenshots
+[Click on Add New Plugin](./screenshot-4.jpg)
+[Click on Upload Pluging](./screenshot-5.jpg)
+[Choose file and click on install](./screenshot-6.jpg)
+
+### Setup Screenshots
+[Click on Customizer](./screenshot-7.jpg)
+[Click on Japu App Integration](./screenshot-8.jpg)
+[Add your Partner ID](./screenshot-9.jpg)
+
+### Setup Screenshots
+[Click on Add a Japu Map in a page or post...](./screenshot-10.jpg)
+[... and will be automatically appended to the main content area](./screenshot-11.jpg)
+[You can add a shortcode to any post type content to embed a Japu map](./screenshot-12.jpg)
+[If you are registered partner, you can use your partnerid in the shortcode](./screenshot-13.jpg)
+[The shortcode will be transformed in a map in the frontend](./screenshot-14.jpg)
+
 ## Built With
 
 * [WordPress Plugin Boilerplate](https://github.com/DevinVinson/WordPress-Plugin-Boilerplate)
