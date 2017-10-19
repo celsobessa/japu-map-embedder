@@ -5,7 +5,7 @@ Tags: comments, spam
 Requires at least: 4.8.2
 Tested up to: 4.8.2
 Requires PHP: 7.1
-Stable tag: 4.3
+Stable tag: 0.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -51,6 +51,23 @@ Check the Screenshots session below for a visual step-by-step guide to install t
 to embed a Japu App map on a WordPress website.
 
 == Changelog ==
+
+= 0.2.1 =
+### Fixed
+- README.txt screenshots
+- bumped version
+
+
+= 0.2.0 =
+### Added
+- screenshots for installing, setup, using and live usage
+- plugin banners (for future use on WordPress plugins repository)
+
+### Fixed
+- Improved styles
+
+### Changed
+- Improved README files
 
 = 0.1 =
 * Initial version
