@@ -70,7 +70,7 @@ class Japu_Map_Embedder {
 		if ( defined( 'PLUGIN_NAME_VERSION' ) ) {
 			$this->version = PLUGIN_NAME_VERSION;
 		} else {
-			$this->version = '0.1.0';
+			$this->version = '0.2.1';
 		}
 		$this->plugin_name = 'japu-map-embedder';
 
