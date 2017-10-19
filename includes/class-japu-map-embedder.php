@@ -157,6 +157,8 @@ class Japu_Map_Embedder {
 		//$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		//$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
 		$this->loader->add_action('customize_register', $plugin_admin, 'add_customizer_options', 100);
+		$this->loader->add_action('add_meta_boxes', $plugin_admin, 'add_japu_map_checkbox');
+		$this->loader->add_action('save_post', $plugin_admin, 'save_add_japu_map', 20, 3);
 	}
 
 	/**
@@ -170,9 +172,10 @@ class Japu_Map_Embedder {
 
 		$plugin_public = new Japu_Map_Embedder_Public( $this->get_plugin_name(), $this->get_version() );
 
-		//$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
-		//$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
+		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
+		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
 		$this->loader->add_action( 'init', $plugin_public, 'register_shortcodes' );
+		$this->loader->add_filter( 'the_content', $plugin_public, 'filter_add_japu_map', 100);
 
 	}
 

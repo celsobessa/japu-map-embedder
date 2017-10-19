@@ -99,13 +99,6 @@ class Japu_Map_Embedder_Admin {
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/japu-map-embedder-admin.js', array( 'jquery' ), $this->version, false );
 
 	}
-	/**
-	 * Add settings customizer panels, sections and controls.
-	 *
-	 * @since    0.1.0
-	 */
-
-
 
 	/**
 	 * @summary        adds Japu - Rota Das Vertentes app settings
@@ -132,19 +125,18 @@ class Japu_Map_Embedder_Admin {
 
 
 		$wp_customize->add_setting('japu_partner_id', array(
-			'default'    => get_option('japu_partner_id'),
+			'default'    => absint( get_option('japu_partner_id') ),
 			'capability' => 'edit_theme_options',
 			'default'     => 0,
 			'type'       => 'option',
 			'sanitize_callback' => 'absint',
-			'validate_callback' => array($this , 'sanitize_number_absint'),
+			'validate_callback' => array($this , 'validate_japu_partner_id'),
 		));
 		$wp_customize->add_control('japu_partner_id', array(
 			'label' => __('Your Japu Partner ID number', $this->plugin_name),
 			'section' => 'japu_app_section',
 			'type' => 'text',
 		));
-
 	}
 
 	/**
@@ -166,6 +158,89 @@ class Japu_Map_Embedder_Admin {
 			$validity->add('id_too_small', __('ID should be greater than zero.', $this->plugin_name));
 		}
 		return $validity;
+	}
+
+	/**
+	 * @summary    Registers add japu map checkbox metabox to posts and page editor
+	 *
+	 * @description    Registers add japu map checkbox metabox to posts and page editor
+	 * @since     0.1.0
+	 * @access    public
+	 * @uses      $this->add_japu_map_checkbox_callback
+	 * @param     string    $post_type    Post type string
+	 * @return    void
+	 */
+	public function add_japu_map_checkbox($post_type) {
+		if ( 'post' !== $post_type && 'page' !== $post_type ) {
+			return;
+		}
+		add_meta_box('add_japu_map', __('Add a Japu Map?', $this->plugin_name), array($this, 'add_japu_map_checkbox_callback'), $post_type, 'side', 'default');
+	}
+
+	/**
+	 * @summary    Echoes an add Japu Map checkbox metabox markup to post or page
+	 *
+	 * @description    Echoes and add Japu Map checkbox metabox markup to post or page
+	 * @since     0.1.0
+	 * @access    public
+	 * @param     void
+	 * @return    string   add Japu Map checkbox HTML markup
+	 */
+	public function add_japu_map_checkbox_callback() {
+		global $post;
+		wp_nonce_field('add-japu-map-metabox', 'add-japu-map-metabox-nonce');
+		$add_japu_map = get_post_meta($post->ID, 'add_japu_map', true);
+		?>
+		<?php _e('<p><small>map will be appended after your main content.</small></p>', $this->plugin_name); ?>
+		<label for="add_japu_map"><?php _e('Yes', $this->plugin_name); ?></label>
+                <input name='add_japu_map' type="checkbox" value="true"  <?php checked( (bool)$add_japu_map , true ); ?>>
+	<?php
+	}
+
+	/**
+	 * @summary        Saves Add Japu Map option
+	 *
+	 * @description    Saves Add Japu Map option (add_japu_map) used by Japu_Map_Embedder_Public::filter_add_japu_map
+	 *
+	 * @since          0.1.0
+	 * @access         public
+	 * @param          string    $post_id    The $post_id
+	 * @param          string    $post       The post object
+	 * @param          string    $update     if is an update (true) or a publish (false) action
+	 * @return         string    $post_id
+	 */
+	public function save_add_japu_map($post_id, $post, $update) {
+		if (!isset($_POST['add-japu-map-metabox-nonce'])) {
+			if (!wp_verify_nonce('add-japu-map-metabox-nonce', 'add-japu-map-metabox')) {
+			}
+			return $post_id;
+		}
+
+		if ( 'post' !== $post->post_type && 'page' !== $post->post_type ){
+			return $post_id;
+		}
+
+		if (!current_user_can('edit_page', $post_id)) {
+			return $post_id;
+		}
+
+		if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) {
+			return $post_id;
+		}
+
+		if ( isset( $_POST['add_japu_map'] ) ) {
+			$add_japu_map = (bool)$_POST['add_japu_map'];
+			//return $post_id;
+		} else {
+			$add_japu_map = false;
+		}
+	    $old_add_japu_map = get_post_meta($post->ID, 'add_japu_map', true);
+	    // Update post meta
+        if( (bool)$old_add_japu_map !== $add_japu_map ){
+			update_post_meta($post->ID, 'add_japu_map', $add_japu_map);
+        }
+		return $post_id;
+
 	}
 
 }

@@ -1,4 +1,53 @@
-/**
- * All of the CSS for your public-facing functionality should be
- * included in this file.
- */
+.japumap-wrapper {
+	margin: 1rem 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+	height: calc( 100vh + 30px);
+	will-change: position, top, left;
+	-webkit-transition: width 0.3s ease-in-out, position 0.3s ease-in-out, top 0.3s ease-in-out, left 0.3s ease;
+	-moz-transition: width 0.3s ease-in-out, position 0.3s ease-in-out, top 0.3s ease-in-out, left 0.3s ease;
+	transition: width 0.3s ease-in-out, position 0.3s ease-in-out, top 0.3s ease-in-out, left 0.3s ease;
+	z-index: 9999;
+}
+.fullscreen.japumap-wrapper {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	margin: 0;
+}
+.japumap-iframe {
+	box-sizing: border-box;
+	width: 100%;
+	height: 100vh;
+	height: calc( 100vh - 30px);
+	border: none;
+	margin: 0;
+}
+.japumap-bottom-bar {
+	background-color: #000;
+	color: #ddd;
+	font-size: 16px;
+	width: 100%;
+	height: 30px;
+    padding: 4px 10px;
+}
+.japumap-bottom-bar a {
+	color: #ffa000;
+}
+#japumap-toggle-full-screen {
+	color: #ffa000;
+	line-height: 1;
+    float: right;
+}
+.return-text {
+	display:none;
+}
+.fullscreen .return-text {
+	display:initial;
+}
+.fullscreen .toggle-full-screen-text {
+	display: none;
+}
