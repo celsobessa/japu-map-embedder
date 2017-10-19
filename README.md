@@ -16,9 +16,11 @@ PHP > 7.0
 1. Download the japu-map-embedder from master branch in the [official Github repository](https://github.com/2aces/japu-map-embedder/)
 2. In the WordPress admin, got to Plugins -> Add New Plugin
 3. Click on Click on Upload Plugin, choose the zip file and click on install
-⋅⋅1. Also, you can upload `japu-map-embedder` folder to the `/wp-content/plugins/` directory instead of steps 2 and 3
+  1. Also, you can upload `japu-map-embedder` folder to the `/wp-content/plugins/` directory instead of steps 2 and 3
 4. Activate the plugin through the 'Plugins' menu in WordPress
 5. If you are a registered Japu - Rotas das Vertentes partner, go to Customizer -> Japu App Integration and set you Partner ID
+
+Check the Screenshots session below for a visual step-by-step guide to install the plugin
 
 ### Use
 
@@ -30,9 +32,12 @@ Tick the Add Japu Map checkbox in the side area of post and page editors (below 
 
 If you are a registered Japu - Rotas das Vertentes partner, set your Partner ID on Customizer -> Japu App Integration and it will be automaticall used with your appended maps for customizing some map styles and content.
 
+
 #### alternative 2: japumap shortcode
 
 Use the `[japumap]` shortcode anywhere in the main content of a post or page. It will be transformed into a map in the front end inside the content area. If you are a  Japu - Rotas ds Vertentes partner, you can pass a `partnerid` parameter and some map styles and content will be customized.
+
+Check the Screenshots session below for a visual step-by-step guide for using the plugin
 
 ## Screenshots
 
