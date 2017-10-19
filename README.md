@@ -1,6 +1,6 @@
 # Japu Map Embedder
 
-This plugin allows the embedding of [Japu - Rotas dsa Vretentes](https://www.japuapp.com.br) culture and tourism maps on a WordPress website either by using a shortcode or enabling a map appended to the main content of a page or post
+This plugin allows the embedding of [Japu - Rotas das Vertentes](https://www.japuapp.com.br) culture and tourism maps on a WordPress website either by using a shortcode or enabling a map appended to the main content of a page or post
 
 ## Getting Started
 
