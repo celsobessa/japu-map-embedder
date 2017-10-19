@@ -16,7 +16,7 @@
  * Plugin Name:       Japu Map Embedder
  * Plugin URI:        https://www.japuapp.com.br/plugins/japu-map-embedder/
  * Description:       This plugin allows the embedding <a href="https://www.japuapp.com.br">Japu App maps</a> on a WordPress website.
- * Version:           0.1.0
+ * Version:           0.2.1
  * Author:            Celso Bessa
  * Author URI:        https://www.japuapp.com.br/
  * License:           GPL-2.0+
@@ -30,7 +30,7 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-define( 'PLUGIN_NAME_VERSION', '0.1.0' );
+define( 'PLUGIN_NAME_VERSION', '0.2.1' );
 
 /**
  * The code that runs during plugin activation.
