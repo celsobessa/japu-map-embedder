@@ -35,8 +35,13 @@ Use the `[japumap]` shortcode anywhere in the main content of a post or page. It
 ## Screenshots
 
 ### Installation Screenshots
-[Click on Add New Plugin](./screenshot-4.jpg)
-[Click on Upload Pluging](./screenshot-5.jpg)
+![Click on Add New Plugin][Click on Add New Plugin]
+![Click on Upload Plugin][Click on Upload Plugin]
+
+[Click on Add New Plugin]: (./screenshot-4.jpg)
+[Click on Upload Plugin]: ./screenshot-5.jpg
+
+-----
 [Choose file and click on install](./screenshot-6.jpg)
 
 ### Setup Screenshots
